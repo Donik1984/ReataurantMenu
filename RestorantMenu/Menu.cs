@@ -9,13 +9,13 @@ namespace RestorantMenu
 {
     class Menu
     {
-        
-        private DateTime _currentDateTime = DateTime.Now;
-        public string[] Category = new string[] {"Appetizer", "Entrees", "Dessert", "Drinks" };
 
-        public Menu ()
+        private DateTime _currentDateTime = DateTime.Now;
+        public string[] Category = new string[] { "Appetizer", "Entrees", "Dessert", "Drinks" };
+
+        public Menu()
         {
-        
+
         }
         //public void SetDateTime (DateTime setCurrentDateTime)
         //{
@@ -34,5 +34,13 @@ namespace RestorantMenu
         //    set { currentdatetime = value; }
         //}
 
+        public List<MenuItems> listOfMenuItems = new List<MenuItems>();
+
+        public string MenuName { get; set; }
+
+        public Menu(string name)
+        {
+            this.MenuName = name;
+        }
     }
 }
