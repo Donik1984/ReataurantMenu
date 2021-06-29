@@ -8,28 +8,27 @@ namespace RestorantMenu
         {
             
                        
-            Menu DateTest = new Menu();
+            Menu CurrentDate = new Menu();
             MenuItems menuItems = new MenuItems();
-            Console.WriteLine(DateTest.currentDateTime);
-            //Console.WriteLine($"{menuItems.ItemName[0]} + {menuItems.Description[0]} + {menuItems.Price[0]}");
-            //Console.WriteLine("Please change the name for the item: ");
-            //menuItems.ItemName[0] = Console.ReadLine();
-            //Console.WriteLine($"{menuItems.ItemName[0]} + {menuItems.Description[0]} + {menuItems.Price[0]}");
+            Console.WriteLine(CurrentDate.GetDateTime());
 
+            Console.WriteLine("Menu Items: ");
             for (int i = 0; i < menuItems.ItemName.Count; i++)
             {
-                Console.WriteLine(menuItems.ItemName[i]);
+                Console.Write($"{i+1} - {menuItems.ItemName[i]}; ");
             }
+            Console.WriteLine($"\nMenu Description: ");
             for (int i = 0; i < menuItems.Description.Count; i++)
             {
-                Console.WriteLine(menuItems.Description[i]);
+                Console.Write($"{i+1} - {menuItems.Description[i]}; ");
             }
+            Console.WriteLine($"\nMenu Price: ");
             for (int i = 0; i < menuItems.Price.Count; i++)
             {
-                Console.WriteLine(menuItems.Price[i]);
+                Console.Write($"{i+1} - ${menuItems.Price[i]}; ");
             }
 
-            Console.WriteLine("Please add the new item name, description and price: ");
+            Console.WriteLine("\nPlease add the new item name, description and price: ");
 
             menuItems.ItemName.Add(Console.ReadLine());
             menuItems.Description.Add(Console.ReadLine());
@@ -38,7 +37,6 @@ namespace RestorantMenu
 
             Console.WriteLine($"New Item(s): {menuItems.ItemName[menuItems.ItemName.Count - 1]}" +
                 $" {menuItems.Description[menuItems.Description.Count - 1]}  ${menuItems.Price[menuItems.Price.Count - 1]}");
-            //Console.WriteLine(menuItems.ItemName.Count);
 
         }
     }

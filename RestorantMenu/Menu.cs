@@ -10,13 +10,23 @@ namespace RestorantMenu
     class Menu
     {
         
-        public DateTime currentDateTime = DateTime.Now;
+        private DateTime _currentDateTime = DateTime.Now;
         public string[] Category = new string[] {"Appetizer", "Entrees", "Dessert", "Drinks" };
 
         public Menu ()
         {
         
         }
+        //public void SetDateTime (DateTime setCurrentDateTime)
+        //{
+        //    _currentDateTime = setCurrentDateTime;
+        //}
+
+        public DateTime GetDateTime()
+        {
+            return _currentDateTime;
+        }
+
 
         //public datetime currentdate
         //{
