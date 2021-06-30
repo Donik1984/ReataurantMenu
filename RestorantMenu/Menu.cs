@@ -36,20 +36,11 @@ namespace Restaurant_Menu_Update
         
         public void PrintMenu()
         {
-            Console.WriteLine(DateTime.Now);
-
             foreach (MenuItem item in listOfMenu)
             {
-               item.PrintAll();
+                item.PrintAll();
             }
         }
-
-        //--Create list of menu items (will contain name and price)
-        //Create categories for what menu item falls under (Appetizer, Entree, Dessert, Drinks)
-        //--Create way to add menu items
-        //--Create way to remove menu items
-        //Create way to edit menu items
-        //--Create way to print all menu items
 
     }
 }

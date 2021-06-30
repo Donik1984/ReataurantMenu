@@ -9,8 +9,7 @@ namespace Restaurant_Menu_Update
             Menu Appetizers = new Menu("Appetizers");
             Menu Entrees = new Menu("Entrees");
             Menu Desserts = new Menu("Desserts");
-            Menu Drinks = new Menu("Drinks");
-
+            
             MenuItem item1 = new MenuItem("Fried Pickles", "Deep fried dill pickles with a side of house made ranch", 8.99);
             MenuItem item2 = new MenuItem("Bone-In Wings", "Choice of Naked, Buffalo, Sweet Chili, BBQ with house made ranch", 9.99);
             MenuItem item3 = new MenuItem("Mozzerella Sticks", "Served with marinara", 6.99);
@@ -34,13 +33,20 @@ namespace Restaurant_Menu_Update
             Desserts.AddItem(item7);
             Desserts.AddItem(item8);
             Desserts.AddItem(item9);
-                                  
-           
+
+
+            Console.WriteLine(DateTime.Now);
+
+            Console.WriteLine("Appetizers\n");
             Appetizers.PrintMenu();
+
+            Console.WriteLine("Entrees\n");
             Entrees.PrintMenu();
+
+            Console.WriteLine("Desserts\n");
             Desserts.PrintMenu();
 
-            
+
         }
     }
 }
