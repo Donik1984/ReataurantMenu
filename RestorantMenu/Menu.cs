@@ -4,43 +4,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace RestorantMenu
+namespace Restaurant_Menu_Update
 {
     class Menu
     {
-
         private DateTime _currentDateTime = DateTime.Now;
-        public string[] Category = new string[] { "Appetizer", "Entrees", "Dessert", "Drinks" };
-
-        public Menu()
-        {
-
-        }
-        //public void SetDateTime (DateTime setCurrentDateTime)
-        //{
-        //    _currentDateTime = setCurrentDateTime;
-        //}
 
         public DateTime GetDateTime()
         {
             return _currentDateTime;
         }
 
+        public List<MenuItem> listOfMenu = new List<MenuItem>();
 
-        //public datetime currentdate
-        //{
-        //    get { return currentdatetime; }
-        //    set { currentdatetime = value; }
-        //}
-
-        public List<MenuItems> listOfMenuItems = new List<MenuItems>();
-
-        public string MenuName { get; set; }
+        public string Category { get; set; }
 
         public Menu(string name)
         {
-            this.MenuName = name;
+            this.Category = name;
         }
+
+        public void AddItem(MenuItem item)
+        {
+            this.listOfMenu.Add(item);
+        }
+
+        public void RemoveItem(MenuItem item)
+        {
+            this.listOfMenu.Remove(item);
+        }
+
+        public void PrintMenu()
+        {
+            foreach (MenuItem item in listOfMenu)
+            {
+                item.PrintAll();
+            }
+        }
+
+        //--Create list of menu items (will contain name and price)
+        //Create categories for what menu item falls under (Appetizer, Entree, Dessert, Drinks)
+        //--Create way to add menu items
+        //--Create way to remove menu items
+        //Create way to edit menu items
+        //--Create way to print all menu items
+
     }
 }

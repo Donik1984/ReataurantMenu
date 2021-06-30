@@ -4,54 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestorantMenu
+namespace Restaurant_Menu_Update
 {
-    public class MenuItems
+    class MenuItem
     {
-        public string ItemName;
-        public string Description;
-        public double Price;
-        //public string Name;
+        //--Create list for details of menu items (name and description)
+        //--Create print details method
+        //Create way to add, modify, remove details
+        //Show if new item
 
-        public void MenuItem(string itemName, string description, double price)
+        public List<string> details = new List<string>();
+
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public double Price { get; set; }
+
+        public MenuItem(string name, string description, double price)
         {
-            this.ItemName = itemName;
+            this.Name = name;
             this.Description = description;
             this.Price = price;
-
-            //return 
         }
 
-        
-        
+        public void PrintAll()
+        {
+            Console.WriteLine($" {this.Name} --- {this.Price}\n {this.Description}");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
 
-
-
-        //public List<string> ItemName = new List<string>
-        //{
-        //    "Burger",
-        //    "Sandvich",
-        //    "Taco"
-        //};
-        //public List<string> Description = new List<string>
-        //{
-        //    "Beef",
-        //    "Turkey and Cheese",
-        //    "Rice and beef"
-        //};
-        //public List<double> Price = new List<double>
-        //{
-        //    6.30,
-        //    3.40,
-        //    4.80
-        //};
-        //public List<string> NewItem = new List<string>();
-
-        //public MenuItems ()
-        //{
-
-        //}
-
-        //string ItemName, string Description, double Price, string NewItem
     }
 }
