@@ -13,7 +13,7 @@ namespace Restaurant_Menu_Update
         //Create way to add, modify, remove details
         //Show if new item
 
-        public List<string> details = new List<string>();
+        //public List<string> details = new List<string>();
 
         public string Name { get; set; }
         public string Description { get; set; }

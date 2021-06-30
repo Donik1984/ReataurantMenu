@@ -23,10 +23,6 @@ namespace Restaurant_Menu_Update
             MenuItem item8 = new MenuItem("Triple Chocolate Cake", "Three layers of chocolate fudge cake", 5.99);
             MenuItem item9 = new MenuItem("Ice Cream", "Choice of Vanilla, Chocolate, Strawberry", 3.99);
 
-            //MenuItem item10 = new MenuItem("");
-            //MenuItem item11 = new MenuItem("");
-            //MenuItem item12 = new MenuItem("");
-
             Appetizers.AddItem(item1);
             Appetizers.AddItem(item2);
             Appetizers.AddItem(item3);
@@ -38,15 +34,13 @@ namespace Restaurant_Menu_Update
             Desserts.AddItem(item7);
             Desserts.AddItem(item8);
             Desserts.AddItem(item9);
-
-            //Drinks.AddItem(item10);
-            //Drinks.AddItem(item11);
-            //Drinks.AddItem(item12);
-
-            
+                                  
+           
             Appetizers.PrintMenu();
             Entrees.PrintMenu();
             Desserts.PrintMenu();
+
+            
         }
     }
 }

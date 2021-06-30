@@ -33,12 +33,14 @@ namespace Restaurant_Menu_Update
         {
             this.listOfMenu.Remove(item);
         }
-
+        
         public void PrintMenu()
         {
+            Console.WriteLine(DateTime.Now);
+
             foreach (MenuItem item in listOfMenu)
             {
-                item.PrintAll();
+               item.PrintAll();
             }
         }
 
