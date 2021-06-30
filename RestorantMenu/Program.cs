@@ -6,10 +6,10 @@ namespace Restaurant_Menu_Update
     {
         static void Main(string[] args)
         {
-            Menu appetizersMenu = new Menu("Appetizers");
-            Menu entreesMenu = new Menu("Entrees");
-            Menu dessertsMenu = new Menu("Desserts");
-            Menu drinksMenu = new Menu("Drinks");
+            Menu Appetizers = new Menu("Appetizers");
+            Menu Entrees = new Menu("Entrees");
+            Menu Desserts = new Menu("Desserts");
+            Menu Drinks = new Menu("Drinks");
 
             MenuItem item1 = new MenuItem("Fried Pickles", "Deep fried dill pickles with a side of house made ranch", 8.99);
             MenuItem item2 = new MenuItem("Bone-In Wings", "Choice of Naked, Buffalo, Sweet Chili, BBQ with house made ranch", 9.99);
@@ -23,30 +23,30 @@ namespace Restaurant_Menu_Update
             MenuItem item8 = new MenuItem("Triple Chocolate Cake", "Three layers of chocolate fudge cake", 5.99);
             MenuItem item9 = new MenuItem("Ice Cream", "Choice of Vanilla, Chocolate, Strawberry", 3.99);
 
-            MenuItem item10 = new MenuItem("");
-            MenuItem item11 = new MenuItem("");
-            MenuItem item12 = new MenuItem("");
+            //MenuItem item10 = new MenuItem("");
+            //MenuItem item11 = new MenuItem("");
+            //MenuItem item12 = new MenuItem("");
 
-            appetizersMenu.AddItem(item1);
-            appetizersMenu.AddItem(item2);
-            appetizersMenu.AddItem(item3);
+            Appetizers.AddItem(item1);
+            Appetizers.AddItem(item2);
+            Appetizers.AddItem(item3);
 
-            entreesMenu.AddItem(item4);
-            entreesMenu.AddItem(item5);
-            entreesMenu.AddItem(item6);
+            Entrees.AddItem(item4);
+            Entrees.AddItem(item5);
+            Entrees.AddItem(item6);
 
-            dessertsMenu.AddItem(item7);
-            dessertsMenu.AddItem(item8);
-            dessertsMenu.AddItem(item9);
+            Desserts.AddItem(item7);
+            Desserts.AddItem(item8);
+            Desserts.AddItem(item9);
 
-            drinksMenu.AddItem(item10);
-            drinksMenu.AddItem(item11);
-            drinksMenu.AddItem(item12);
+            //Drinks.AddItem(item10);
+            //Drinks.AddItem(item11);
+            //Drinks.AddItem(item12);
 
-
-
-
-            appetizersMenu.PrintMenu();
+            
+            Appetizers.PrintMenu();
+            Entrees.PrintMenu();
+            Desserts.PrintMenu();
         }
     }
 }

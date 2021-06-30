@@ -28,7 +28,7 @@ namespace Restaurant_Menu_Update
         {
             this.listOfMenu.Add(item);
         }
-
+        
         public void RemoveItem(MenuItem item)
         {
             this.listOfMenu.Remove(item);

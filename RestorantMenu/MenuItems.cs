@@ -25,7 +25,6 @@ namespace Restaurant_Menu_Update
             this.Description = description;
             this.Price = price;
         }
-
         public void PrintAll()
         {
             Console.WriteLine($" {this.Name} --- {this.Price}\n {this.Description}");
